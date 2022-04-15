@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+/* 
+Berke Ozten 300346658
+*/
+
+/* Mobile */
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: gainsboro;
+}
+
+body > *{
+    padding: 20px;
+    flex: 1 1 100%;  
+}
+
+h1, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #383838;
+}
+
+
+h2 , nav{
+    font-family: "Arial Narrow", Arial, sans-serif;
+    color: 	#383838;
+    font-weight: bold;
+}
+
+h2{
+    font-weight: lighter;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 40px;
+    text-decoration: none;
+    justify-content: center;
+}
+
+
+nav > div{
+    box-sizing: border-box;
+    flex: 1 1 100%;   
+    background-color: whitesmoke;
+    justify-content: center;
+    padding: 10px 0px;
+    max-width: 450px;
+}
+
+nav > div > a {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: #383838;
+    font-size: medium;
+}
+
+div#portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+}
+
+div#portfolio > * {
+    flex: 1 1 100%;
+    margin: 10px 0px;         
+}
+
+#contact > * {
+    margin: 15px auto;
+}
+
+
+div#contact > p {
+    font-family: Arial, sans-serif;
+    color: gray;
+    font-size: medium;
+}
+
+div#contact > p>a {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    color: #383838;
+    font-size: medium;
+}
+
+img#profile{
+    width: 70%;
+    margin: 10px auto;
+    max-width: 350px;
+    border-radius: 200px;
+}
+
+p{
+    max-width: 450px;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+img.project{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 400px; 
+}
+
+
+footer{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#lastNav{
+    display: none;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px)   {
+    body > *{
+        padding: 10px;
+    }
+    nav {
+        gap: 20px;
+    }
+    nav > div{
+        flex-wrap: nowrap;
+        flex: 0 1 0px;
+        background-color: gainsboro;
+        color: #383838;
+    }
+    h1{
+        margin-block-end: 0px;
+    }
+    #home{
+        display: flex;
+        flex-flow: row-reverse;
+    }
+
+    #home > p {
+        align-self: center;
+        padding: 10px;
+    }
+
+    div#portfolio{
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 20px;        
+    }
+
+    div#portfolio > * {
+        flex: 1 1 40%;
+        margin: 10px 0px;         
+    }
+      
+    #contact > * {
+        margin: 30px auto;
+    }
+
+    #toTop{
+        display: none;
+    }
+
+    #lastNav{
+        display: flex;
+    }
+
+    footer{
+        padding-left: 20px;
+    }
+    
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 1024px)   {
+	div#portfolio > * {
+        flex: 1 1 30%;        
+    }
+}
